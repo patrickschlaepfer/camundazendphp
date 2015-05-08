@@ -24,4 +24,9 @@ http://framework.zend.com/manual/current/en/user-guide/modules.html
 And for the basic setup
 https://www.youtube.com/watch?t=225&v=fIPC2bJAIIo
 
+To create a module structure, you could use the following command - if the module name is Album:
+
+```
+mkdir -pv Album/{config,src/Album/{Controller,Form,Model},view/album/album}
+```
  
