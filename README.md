@@ -2,8 +2,13 @@
 
 My first try to use zend php framework together with composer/mysql.
 
-No need for a running webserver, as using php -S localhost:8080 in the public directory.
-This is very handy.
+No need for a running webserver, as using 
+
+```
+php -S localhost:8080 
+```
+
+in the public directory. This is very handy.
 
 To get it run towards a mysql database. Had to uncomment and change to following line in php.ini
 
