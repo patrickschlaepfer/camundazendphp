@@ -1,4 +1,4 @@
-# Zend Skeleton
+# Zend Skeleton with Camunda REST connection
 
 My first try to use zend php framework together with composer/mysql.
 
