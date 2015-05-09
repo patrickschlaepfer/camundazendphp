@@ -1,0 +1,30 @@
+<?php
+ // module/Camunda/view/album/album/index.phtml:
+
+ $title = 'Process Definitions';
+ $this->headTitle($title);
+ ?>
+ <h1><?php echo $this->escapeHtml($title); ?></h1>
+ <p>
+     <a href="<?php echo $this->url('album', array('action'=>'add'));?>">Add new album</a>
+ </p>
+
+ <table class="table">
+ <tr>
+     <th>Deployment Id</th>
+     <th>Artist</th>
+     <th>&nbsp;</th>
+ </tr>
+ <?php foreach ($processDefinitions as $processDefinition) : ?>
+ <tr>
+     <td><?php echo $this->escapeHtml($processDefinition->getDeploymentId());?></td>
+     <td><?php echo $this->escapeHtml($processDefinition->getDeploymentId());?></td>
+     <td>
+         <a href="<?php echo $this->url('album',
+             array('action'=>'edit', 'id' => $album->id));?>">Edit</a>
+         <a href="<?php echo $this->url('album',
+             array('action'=>'delete', 'id' => $album->id));?>">Delete</a>
+     </td>
+ </tr>
+ <?php endforeach; ?>
+ </table>
