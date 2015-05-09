@@ -1,5 +1,5 @@
 <?php
-namespace Camunda;
+namespace CamundaRest;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
